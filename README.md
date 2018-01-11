@@ -34,7 +34,8 @@ This is a work in progress, and is mostly a means for me to document my current 
 
   5. Clone this repository to your local drive.
   6. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-  7. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
+  7. Set the login to the MacAppStore in the `mas_email`and `mas_password`variables in the `default.config.yml` file (**Warning** This modification **must not** be commited nor pushed).
+  8. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
 
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 

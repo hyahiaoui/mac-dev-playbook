@@ -40,14 +40,28 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - appcleaner
+  - bettertouchtool
   - docker
+  - franz
+  - github
   - macvim
   - sublime-text
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
 mas_email: ""
 mas_password: ""
+mas_installed_apps:
+      - { id: 497799835, name: "Xcode" }
+      - { id: 425424353, name: "The Unarchiver" }
+      - { id: 921458519, name: "DrCleaner" }
+      - { id: 568494494, name: "Pocket" }
+      - { id: 1091189122, name: "Bear" }
+      - { id: 409201541, name: "Pages" }
+      - { id: 552383089, name: "Dashlane" }
+      - { id: 682658836, name: "GarageBand" }
+      - { id: 1176895641, name: "Spark" }
+      - { id: 409203825, name: "Numbers" }
 
 osx_script: "~/.osx --no-restart"
 
