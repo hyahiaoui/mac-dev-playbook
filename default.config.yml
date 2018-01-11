@@ -1,12 +1,11 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: yes
-configure_sudoers: yes
-configure_terminal: yes
-configure_osx: yes
+configure_dotfiles: no
+configure_terminal: no
+configure_osx: no
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/hyahiaoui/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
@@ -20,20 +19,11 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
-  - chromedriver
   - doxygen
   - gettext
-  - gifsicle
   - git
   - go
-  - gpg
   - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
   - node
   - nvm
   - ssh-copy-id
@@ -42,7 +32,6 @@ homebrew_installed_packages:
   - openssl
   - pv
   - wget
-  - wrk
 
 homebrew_taps:
   - homebrew/core
@@ -52,21 +41,8 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - docker
-  - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - limechat
   - macvim
-  - sequel-pro
-  - skitch
-  - slack
   - sublime-text
-  - transmit
-  - vagrant
-  - virtualbox
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
